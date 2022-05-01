@@ -3,19 +3,19 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $PRO_REPO == "PROBOT" ]]
+    if [[ $SELENE_REPO == "SELENEBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
-    elif [[ $PRO_REPO == "PROBOT" ]]
+    elif [[ $SELENE_REPO == "SELENEBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
-    elif [[ $PRO_REPO =~ $regex ]]
+    elif [[ $SELENE_REPO =~ $regex ]]
     then
-        if [[ $PRO_REPO_BRANCH ]]
+        if [[ $SELENE_REPO_BRANCH ]]
         then
-            echo "${PRO_REPO}/archive/${PRO_REPO_BRANCH}.zip"
+            echo "${SELENE_REPO}/archive/${SELENE_REPO_BRANCH}.zip"
         else
-            echo "${PRO_REPO}/archive/Pro.zip"
+            echo "${SELENE_REPO}/archive/Pro.zip"
         fi
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
@@ -23,24 +23,24 @@ _get_repolink () {
 }
 
 
-_pro_bot () {
+_selene_bot () {
     local zippath
-    zippath="Pro.zip"
-    echo "  🔰 Downloading Pro DragonBot Source Code... 🔰"
+    zippath="Selene.zip"
+    echo "  🔰 Downloading SELENE Bot Source Code... 🔰"
     wget -q $(_get_repolink) -O "$zippath"
     echo "  📍Unpacking Data...📍"
-    PROPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+   SELENEPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
     echo " 🏅 Download Complete Now Installing 🏅"
-    echo "  ✨ INSTALLING PRO DRAGONBOT ✨"
+    echo "  ✨ INSTALLING SELENEBOT ✨"
     rm -rf "$zippath"
     sleep 5
-    cd $PROPATH
-    echo "    ⚜️Starting Pro Dragonẞøt⚜️     "
+    cd $SELENEPATH
+    echo "    ⚜️Starting SELENEẞøt⚜️     "
     echo " ♥️ NOW WAIT 3 MIN INSTALLING ALL PLUGIN ♥️"
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     python3 -m userbot
 }
 
-_pro_bot
+_selene_bot
