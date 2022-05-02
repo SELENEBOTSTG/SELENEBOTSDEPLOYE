@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: Selene userbot
+   worker: Python 3 -m userbot
