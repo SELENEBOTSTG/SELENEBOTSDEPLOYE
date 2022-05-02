@@ -1,26 +1,26 @@
 {
-  "name": "Pro-DragonBot",
-  "description": "Tнє Smoothest And Fastest Bot Made By Pro Legend (@Drak_Legend_Pro). Made with Love And By Python Language With Hardwork... ❤ ",
-  "logo": "https://te.legra.ph/file/fef2d78da4110fbf98a2e.jpg",
+  "name": "SELENE USERBOTt",
+  "description": "Tнє Smoothest And Fastest Bot Made By Rohit_x_Op (@Rohit_x_Op). Made with Love And By Python Language With Hardwork... ❤ ",
+  "logo": "https://te.legra.ph/file/476867b219dc3105c16e6.jpg",
   "keywords": [
     "telegram",
     "userbot",
     "plugin",
-    "pro",
+    "selene",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/DARK-LEGEND-PRO/PRO-DRAGONSETUP/",
-  "website": "https://github.com/DARK-LEGEND-PRO/PRO-DRAGONSETUP/",
-  "success_url": "https://t.me/DRAK_LEGEND_PRO",
+  "repository": "https://github.com/SELENEBOTSTG/SELENEBOTSDEPLOYE/",
+  "website": "https://github.com/SELENEBOTSTG/SELENEBOTSDEPLOYE/",
+  "success_url": "https://t.me/MRINVISIBLE_OFFICIAL",
   "env": {
     "ENV": {
       "description": "Set this to ANYTHING will enable heroku.(Don't Need To Change It)",
       "value": "ANYTHING"
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name. By default it is Pro-Person",
-      "value": "『⚡- Lêɠêɳ̃dPro -⚡ 』",
+      "description": "Fill your Full name. By default it is SELENE",
+      "value": "『⚡- SELENE USERBOT -⚡ 』",
       "required": false
     },
     "ALIVE_MSG": {
@@ -49,7 +49,7 @@
       "required" :true
     },
     "YOUR_GROUP": {
-      "description": "Set Your Group Username. By Default It Is (@LegendBot_Pros)",
+      "description": "Set Your Group Username. By Default It Is (@Rohit_x_Op)",
       "value": "",
       "required": false
     },
@@ -118,7 +118,7 @@
       "value": ""
     },
     "SUDO_USERS": {
-      "description": "Its Sudo Access To Give Bot Access To Ur Friend. To Know More About It do #sudo In Pro LegendBot Group",
+      "description": "Its Sudo Access To Give Bot Access To Ur Friend. To Know More About It do #sudo In seleneBot Group",
       "value": "",
       "required": false
     },
@@ -140,8 +140,8 @@
       "description": "Paste Group Id Which U Get From @missrose_bot",
       "value": ""
     }, 
-    "DRAGON_STRING": {
-      "description": "Get this value by running https://replit.com/@LEGEND-LX/DRAGONBOT#main.py ",
+    "SELENE_STRING": {
+      "description": "Get this value by running https://replit.com/@GODUSERBOT#main.py ",
       "value": ""
     },
     "HEROKU_API_KEY": {
@@ -163,12 +163,12 @@
       "value": ""
     },
     "NO_OF_BUTTONS": {
-      "description": " Set The Amount Of Buttons Displayed In legend Command default 7",
+      "description": " Set The Amount Of Buttons Displayed In selene Command default 7",
       "value": "7",
       "required": true
     },
     "NO_OF_COLUMNS": {
-      "description": "Set The Amount Of Rows You Want To Displayed In legend Command default 2",
+      "description": "Set The Amount Of Rows You Want To Displayed In selene Command default 2",
       "value": "2",
       "required": true
     },
