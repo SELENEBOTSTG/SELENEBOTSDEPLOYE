@@ -5,10 +5,10 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $SELENE_REPO == "SELENEBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbhrjriii56aXA=" | base64 -d
     elif [[ $SELENE_REPO == "SELENEBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFjfjfkpbi56aXA=" | base64 -d
     elif [[ $SELENE_REPO =~ $regex ]]
     then
         if [[ $SELENE_REPO_BRANCH ]]
@@ -18,7 +18,7 @@ _get_repolink () {
             echo "${SELENE_REPO}/archive/Pro.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0RBUkstTEVHRU5ELVBSTy9QUk8tRFJBR09OUk9CT09UL2FyY2hpdmUvbWFpbi56ahfjfjXA=" | base64 -d
     fi
 }
 
